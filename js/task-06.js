@@ -5,4 +5,5 @@ inputEl.addEventListener("blur", () => {
     return inputEl.classList.add("valid");
   }
   inputEl.classList.add("invalid");
+  inputEl.classList.remove("valid");
 });
