@@ -20,5 +20,6 @@ const addImages = images
       `<li class="gallery__list"> <img class="gallery__item" src="${elem.url}" alt="${elem.alt}" width="600"></li>`
   )
   .join("");
-galleryEl.insertAdjacentHTML("beforeend", addImages);
+
+galleryEl.insertAdjacentHTML("afterbegin", addImages);
 console.log(galleryEl);
